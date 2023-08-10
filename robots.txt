@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://leon-lxa.github.io/leon-lxa/sitemap.xml
+Sitemap: https://leon-lxa.github.io/sitemap.xml
