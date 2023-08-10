@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: https://ethz.ch/en.html/
 subtitle: <a href='#'>ETH Zurich</a>. Rämistrasse 101, 8092 Zürich.
 
 profile:
