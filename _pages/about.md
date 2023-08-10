@@ -9,7 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    # <p>555 your office number</p>
     <p>Luegislandstrasse 55</p>
     <p>8051, Zurich</p>
 
