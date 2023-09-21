@@ -2,9 +2,9 @@
 layout: page
 title: Robocon 2020 Competition
 description: Two robots for playing Rugby
-img: assets/img/Robocon.jpg
+img: assets/img/Robocon_logo.jpg
 importance: 3
-category: fun
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
