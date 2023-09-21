@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
+title: Robocon 2020 Competition
+description: Two robots for playing Rugby
+img: assets/img/Robocon.jpg
 importance: 3
 category: fun
 ---
