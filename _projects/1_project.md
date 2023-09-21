@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Multi-agents planning at a crossroad
+description: Projects for PDM4AR 2022 Fall at ETHZ
 img: assets/img/12.jpg
 importance: 1
 category: work
