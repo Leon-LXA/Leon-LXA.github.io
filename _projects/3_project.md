@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
+title: Adaptive Mechanism Design in Sequential Social Dilemmas
+description: Project for Foundations of RL
+img: assets/img/AMD.png
 redirect: https://unsplash.com
 importance: 3
 category: work
