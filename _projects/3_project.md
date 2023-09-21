@@ -3,7 +3,6 @@ layout: page
 title: Adaptive Mechanism Design in Sequential Social Dilemmas
 description: Project for Foundations of RL
 img: assets/img/AMD.png
-redirect: https://unsplash.com
 importance: 3
 category: work
 ---
