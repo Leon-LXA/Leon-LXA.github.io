@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Navigation of Mobile Robots on Rough Terrain
+description: Navigation on SCOUT|AgileX Robotics on rough terrain
+img: assets/img/Navigation.jpg
 importance: 2
 category: work
 giscus_comments: true
