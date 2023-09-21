@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Blocks Robotics
+description: Control QKM six-joint robot arm to build toy blocks, for ROBOTICS class in HITSZ
+img: assets/img/blocks.png
+importance: 4
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
