@@ -1,97 +1,162 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
-
+  - name: Full Name
+    value: Xuanang Lei
+  - name: Email
+    value: <a href="mailto:leixuanang@outlook.com">leixuanang@outlook.com</a>
+  - name: GitHub
+    value: <a href="https://github.com/Leon-LXA">Leon-LXA</a>
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
-
-- title: Experience
+  - title: Master's degree in Robotics, Systems and Control
+    institution: ETH Zurich
+    location: Zurich, Switzerland
+    year: 2022-09 - 2025-09
+    description:
+    - 'GPA: 5.76/6.00; rank: 30/180.'
+    - Introduction to Machine Learning (6/6); Computer Vision (5.75/6).
+    - Planning and Decision Making for Autonomous Robots (5.75/6); Vision Algorithms for Mobile Robotics (5/6).
+    - Probabilistic Artificial Intelligence (5.5/6); Foundations of Reinforcement Learning (5.5/6); Model Predictive
+      Control (5.75/6).
+    - Robotics Summer School.
+  - title: Bachelor of Engineering in Automation
+    institution: Harbin Institute of Technology (HIT)
+    location: Shenzhen, China
+    year: 2018-09 - 2022-06
+    description:
+    - 'GPA: 92.9/100; rank: 1/125.'
+- title: Work Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+  - title: Robotics Algorithm Engineer
+    year: 2026-04 - 2026-10
+    institution: Viterra Robotics, Chengdu, China
+    description:
+    - Established an end-to-end sim-to-real development workflow for quadrotor autonomy, spanning simulation, onboard
+      deployment, and real-world flight validation.
+    - Developed autonomous exploration and motion planning algorithms for quadrotors navigating complex, GPS-denied
+      environments.
+    - Conducted flight-dynamics identification and control-oriented modeling, and developed physics-informed learning
+      methods for external force and torque estimation.
+  - title: R&D Engineer Intern
+    year: 2025-02 - 2025-09
+    institution: Inspire AG, Zurich, Switzerland
+    maindescription: 'Supervisor: Dr. Julian Ferchow.'
+    description:
+    - Developed an assembly motion recognition and real-time error detection system with Bossard AG and Intelliact
+      AG.
+    - Validated the system through field tests at Stäubli and Mettler-Toledo factories.
+- title: Research Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
+  - title: Assembly Motion Generation for Action Recognition
+    year: 2024-08 - 2025-02
+    maindescription: 'Master''s Thesis Student, ETH Zurich. Grade: 6.0/6.0. Advisor: Prof. Dr. Mirko Meboldt (Pd|z).'
+    description:
+    - Used reinforcement learning with the GraspXL framework for scalable dexterous grasp generation.
+    - Synthesized assembly motions with a grasping hand in simulation.
+    - Trained action recognition models using synthetic assembly motions and labels.
+  - title: Adversarial Learning via Differentiable Simulation
+    year: 2023-11 - 2024-03
+    maindescription: 'Semester Project Student, ETH Zurich. Advisor: Prof. Fan Shi (ETH AI Center).'
+    description:
+    - Developed adversarial attacks on quadruped locomotion policies using gradient information from differentiable
+      simulation.
+    - Applied projected gradient descent to joint-state inputs to disrupt legged robot locomotion.
+  - title: Adaptive Mechanism Design in Sequential Social Dilemmas
+    year: 2023-04 - 2023-06
+    maindescription: 'Student, ETH Zurich. Advisor: Dr. Vinzenz Thoma (D-INFK, ETH AI Center).'
+    description:
+    - Reimplemented the adaptive mechanism design (AMD) algorithm using Ray RLlib, validated it on the prisoner's
+      dilemma, and adapted it to more complex multi-agent environments.
+    - Provided open-source implementations of the Wolfpack and Gathering environments.
+  - title: Navigation of Mobile Robots on Rough Terrain
+    year: 2021-06 - 2022-09
+    maindescription: 'Research Assistant, Tsinghua University, Shenzhen, China. Advisor: Prof. Xueqian Wang.'
+    description:
+    - Developed real-time SLAM and navigation for the AgileX SCOUT platform on extremely rough terrain.
+    - Used model predictive control (MPC) and control barrier functions (CBFs) for local collision avoidance, and
+      PF-RRT* for global planning.
+    - Built point-cloud maps of complex terrain.
+- title: Publications and Manuscripts
+  type: time_table
+  contents:
+  - title: A Synthetic-Driven Vision System for Assembly Step Recognition
+    year: '2026'
+    description:
+    - Hui Zhang*, Xuanang Lei*, Rui Wang, Julian Ferchow, Mirko Meboldt. *Equal contribution.
+    - IEEE 22nd International Conference on Automation Science and Engineering (CASE), 2026.
+  - title: Dynamic Control Barrier Function-based Model Predictive Control to Safety-Critical Obstacle-Avoidance
+      of Mobile Robot
+    year: '2023'
+    description:
+    - Zhuozhu Jian*, Zihong Yan*, Xuanang Lei, Zihong Lu, Bin Lan, Xueqian Wang, Bin Liang. *Equal contribution.
+    - IEEE International Conference on Robotics and Automation (ICRA), 2023.
+  - title: Quadrotor External-Wrench Estimation via Physically Structured Residual Learning
+    year: In preparation
+    description:
+    - Xuanang Lei, Yunfan Ren.
+    - To be submitted to IEEE Robotics and Automation Letters (RA-L).
+- title: Leadership
+  type: time_table
+  contents:
+  - title: Captain, ABU ROBOCON Team
+    year: 2019-12 - 2021-03
+    institution: WTR Team, Harbin Institute of Technology
+    maindescription: 'Advisor: Prof. Yunjiang Lou.'
+    description:
+    - Led the team to a first prize at ABU ROBOCON 2020, placing among the top 16 of 75 participating universities.
+    - Won a national second prize at ABU ROBOCON 2019 as a first-year team member.
+    - Established a campus robotics forum that attracted more than 300 students.
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
+  - title: National Scholarship
+    year: '2020'
+  - title: University Scholarships (three awards)
+    year: 2018–2021
+    institution: Harbin Institute of Technology
+  - title: First Prize, ABU ROBOCON
+    year: '2020'
+    description:
+    - Top 16 of 75 participating universities.
+  - title: National Second Prize, ABU ROBOCON
+    year: '2019'
+  - title: Excellent Student Leader
+    year: 2018–2019
+    institution: Harbin Institute of Technology
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+  - title: Programming & Software
+    items:
+    - C++
+    - Python
+    - MATLAB
+    - ROS
+    - OpenCV
+    - STM32
+    - Arduino
+  - title: Robotics
+    items:
+    - Motion planning
+    - SLAM
+    - Real-time navigation
+    - Grasping algorithms
+  - title: Machine Learning & AI
+    items:
+    - Reinforcement learning
+    - Probabilistic AI
+    - Computer vision
+    - Action recognition
+    - Adversarial learning
+  - title: Simulation & Rendering
+    items:
+    - Blender
+    - Isaac Gym
+    - RaiSim
+    - Webots
+    - CoppeliaSim
+    - SolidWorks

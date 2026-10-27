@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 group :jekyll_plugins do
     gem 'classifier-reborn'
-    gem 'jekyll'
+    gem 'jekyll', '~> 4.4.1'
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
@@ -17,7 +17,8 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
+    # ExecJS uses Node.js (configured in the deployment workflow), avoiding
+    # a second JavaScript runtime and its platform-specific native build.
     gem 'unicode_utils'
     gem 'webrick'
 end

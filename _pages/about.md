@@ -2,26 +2,35 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>ETH Zurich</a>. Rämistrasse 101, 8092 Zürich.
+subtitle: Robotics &middot; Learning &middot; Control
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>Luegislandstrasse 55</p>
-    <p>8051, Zurich</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: false
+latest_posts: false
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am currently a master student at ETH Zurich, majoring in Robitcs, Systems and Control. Previously, I finished my bachelor study at Harbin Institute of Technology(Shenzhen) advised by Prof. Yunjiang Lou and Prof. Haoyao Chen. Then I was a research assistant at Tsinghua University and finished my bachelor thesis advised by Prof. Xueqian Wang. My current interests focus on Motion Planning, Reinforcement Learning and Model Predictive Control.
+I am a robotics engineer with a master's degree in **Robotics, Systems and Control from ETH Zurich**. My work combines model-based control, robot learning, and real-world validation for aerial and mobile robots.
 
-\iffalse
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Most recently, I worked as a **Robotics Algorithm Engineer at Viterra Robotics** (April–October 2026), developing quadrotor autonomy for GPS-denied environments, a simulation-to-flight development workflow, and learning-based external force and torque estimation. Previously, as an **R&D Engineer Intern at Inspire AG**, I worked with Bossard AG and Intelliact AG on assembly recognition and error detection, with field tests at Stäubli and Mettler-Toledo.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
-\fi
+At ETH Zurich, my master's thesis explored **synthetic assembly motion generation for action recognition**, supervised by Prof. Mirko Meboldt, and received a grade of **6.0/6.0**. I also worked on adversarial learning through differentiable simulation and adaptive mechanism design in multi-agent environments.
+
+I received my B.E. in Automation from **Harbin Institute of Technology, Shenzhen**, ranking **1st out of 125 students**. My earlier robotics work was advised by Prof. Yunjiang Lou and Prof. Haoyao Chen. I was also a research assistant at **Tsinghua University**, working with Prof. Xueqian Wang on mobile robot navigation over rough terrain.
+
+<div class="home-actions">
+  <a class="btn btn-sm btn-outline-primary" href="{{ '/assets/pdf/CV_LXA.pdf' | relative_url }}">Download CV</a>
+  <a class="btn btn-sm btn-outline-primary" href="{{ '/projects/' | relative_url }}">Research &amp; projects</a>
+  <a class="btn btn-sm btn-outline-primary" href="mailto:{{ site.email }}">Email</a>
+</div>
+
+## Research interests
+
+**Motion planning and control · Robot learning · Dynamics and disturbance estimation · Computer vision**
+
+I am interested in robots that can reason about their dynamics and operate reliably outside the laboratory. My recent projects cover six-axis external-wrench estimation for quadrotors, autonomous exploration, synthetic data for assembly recognition, and robustness of legged robot policies.

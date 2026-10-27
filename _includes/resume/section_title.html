@@ -1,0 +1,9 @@
+{%- case include.key -%}
+  {%- when "basics" -%}Contact
+  {%- when "work" -%}Work Experience
+  {%- when "projects" -%}Research Experience
+  {%- when "volunteer" -%}Leadership
+  {%- when "publications" -%}Publications &amp; Manuscripts
+  {%- when "awards" -%}Honors &amp; Awards
+  {%- else -%}{{ include.key | capitalize }}
+{%- endcase -%}

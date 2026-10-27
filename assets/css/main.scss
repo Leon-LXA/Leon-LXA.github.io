@@ -14,3 +14,14 @@ $max-content-width: {{ site.max_width }};
   "distill",
   "cv"
 ;
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+}
+
+.home-actions .btn {
+  margin: 0;
+}

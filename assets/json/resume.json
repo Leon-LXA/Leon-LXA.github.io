@@ -1,77 +1,239 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
+    "name": "Xuanang Lei",
+    "label": "Robotics Algorithm Engineer",
+    "email": "leixuanang@outlook.com",
+    "url": "https://leon-lxa.github.io/",
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "Leon-LXA",
+        "url": "https://github.com/Leon-LXA"
       }
     ]
   },
-  "work": [
+  "education": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": [
-        "Relativity"
+      "institution": "ETH Zurich",
+      "location": "Zurich, Switzerland",
+      "url": "",
+      "area": "Robotics, Systems and Control",
+      "studyType": "Master's degree",
+      "startDate": "2022-09",
+      "endDate": "2025-09",
+      "score": "5.76/6.00",
+      "courses": [
+        "GPA: 5.76/6.00; rank: 30/180.",
+        "Introduction to Machine Learning (6/6); Computer Vision (5.75/6).",
+        "Planning and Decision Making for Autonomous Robots (5.75/6); Vision Algorithms for Mobile Robotics (5/6).",
+        "Probabilistic Artificial Intelligence (5.5/6); Foundations of Reinforcement Learning (5.5/6); Model Predictive Control (5.75/6).",
+        "Robotics Summer School."
+      ]
+    },
+    {
+      "institution": "Harbin Institute of Technology (HIT)",
+      "location": "Shenzhen, China",
+      "url": "",
+      "area": "Automation",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2018-09",
+      "endDate": "2022-06",
+      "score": "92.9/100",
+      "courses": [
+        "GPA: 92.9/100; rank: 1/125."
       ]
     }
   ],
-  "volunteer": [],
-  "education": [
+  "work": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": [
-        "Theory of Relativity"
+      "name": "Viterra Robotics, Chengdu, China",
+      "position": "Robotics Algorithm Engineer",
+      "startDate": "2026-04",
+      "endDate": "2026-10",
+      "url": "",
+      "highlights": [
+        "Established an end-to-end sim-to-real development workflow for quadrotor autonomy, spanning simulation, onboard deployment, and real-world flight validation.",
+        "Developed autonomous exploration and motion planning algorithms for quadrotors navigating complex, GPS-denied environments.",
+        "Conducted flight-dynamics identification and control-oriented modeling, and developed physics-informed learning methods for external force and torque estimation."
+      ]
+    },
+    {
+      "name": "Inspire AG, Zurich, Switzerland",
+      "position": "R&D Engineer Intern",
+      "startDate": "2025-02",
+      "endDate": "2025-09",
+      "url": "",
+      "summary": "Supervisor: Dr. Julian Ferchow.",
+      "highlights": [
+        "Developed an assembly motion recognition and real-time error detection system with Bossard AG and Intelliact AG.",
+        "Validated the system through field tests at Stäubli and Mettler-Toledo factories."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Assembly Motion Generation for Action Recognition",
+      "url": "/projects/7_project/",
+      "startDate": "2024-08",
+      "endDate": "2025-02",
+      "summary": "Master's Thesis Student, ETH Zurich. Grade: 6.0/6.0. Advisor: Prof. Dr. Mirko Meboldt (Pd|z).",
+      "highlights": [
+        "Used reinforcement learning with the GraspXL framework for scalable dexterous grasp generation.",
+        "Synthesized assembly motions with a grasping hand in simulation.",
+        "Trained action recognition models using synthetic assembly motions and labels."
+      ]
+    },
+    {
+      "name": "Adversarial Learning via Differentiable Simulation",
+      "url": "/projects/8_project/",
+      "startDate": "2023-11",
+      "endDate": "2024-03",
+      "summary": "Semester Project Student, ETH Zurich. Advisor: Prof. Fan Shi (ETH AI Center).",
+      "highlights": [
+        "Developed adversarial attacks on quadruped locomotion policies using gradient information from differentiable simulation.",
+        "Applied projected gradient descent to joint-state inputs to disrupt legged robot locomotion."
+      ]
+    },
+    {
+      "name": "Adaptive Mechanism Design in Sequential Social Dilemmas",
+      "url": "/projects/3_project/",
+      "startDate": "2023-04",
+      "endDate": "2023-06",
+      "summary": "Student, ETH Zurich. Advisor: Dr. Vinzenz Thoma (D-INFK, ETH AI Center).",
+      "highlights": [
+        "Reimplemented the adaptive mechanism design (AMD) algorithm using Ray RLlib, validated it on the prisoner's dilemma, and adapted it to more complex multi-agent environments.",
+        "Provided open-source implementations of the Wolfpack and Gathering environments."
+      ]
+    },
+    {
+      "name": "Navigation of Mobile Robots on Rough Terrain",
+      "url": "/projects/2_project/",
+      "startDate": "2021-06",
+      "endDate": "2022-09",
+      "summary": "Research Assistant, Tsinghua University, Shenzhen, China. Advisor: Prof. Xueqian Wang.",
+      "highlights": [
+        "Developed real-time SLAM and navigation for the AgileX SCOUT platform on extremely rough terrain.",
+        "Used model predictive control (MPC) and control barrier functions (CBFs) for local collision avoidance, and PF-RRT* for global planning.",
+        "Built point-cloud maps of complex terrain."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "A Synthetic-Driven Vision System for Assembly Step Recognition",
+      "publisher": "IEEE 22nd International Conference on Automation Science and Engineering (CASE), 2026.",
+      "releaseDate": "2026",
+      "url": "/publications/",
+      "summary": "Hui Zhang*, Xuanang Lei*, Rui Wang, Julian Ferchow, Mirko Meboldt. *Equal contribution."
+    },
+    {
+      "name": "Dynamic Control Barrier Function-based Model Predictive Control to Safety-Critical Obstacle-Avoidance of Mobile Robot",
+      "publisher": "IEEE International Conference on Robotics and Automation (ICRA), 2023.",
+      "releaseDate": "2023",
+      "url": "/publications/",
+      "summary": "Zhuozhu Jian*, Zihong Yan*, Xuanang Lei, Zihong Lu, Bin Lan, Xueqian Wang, Bin Liang. *Equal contribution."
+    },
+    {
+      "name": "Quadrotor External-Wrench Estimation via Physically Structured Residual Learning",
+      "publisher": "To be submitted to IEEE Robotics and Automation Letters (RA-L).",
+      "releaseDate": "",
+      "url": "/publications/",
+      "summary": "Xuanang Lei, Yunfan Ren."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "WTR Team, Harbin Institute of Technology",
+      "position": "Captain, ABU ROBOCON Team",
+      "url": "",
+      "startDate": "2019-12",
+      "endDate": "2021-03",
+      "summary": "Advisor: Prof. Yunjiang Lou.",
+      "highlights": [
+        "Led the team to a first prize at ABU ROBOCON 2020, placing among the top 16 of 75 participating universities.",
+        "Won a national second prize at ABU ROBOCON 2019 as a first-year team member.",
+        "Established a campus robotics forum that attracted more than 300 students."
       ]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [],
-  "publications": [],
-  "skills": [],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker"
+      "title": "National Scholarship",
+      "date": "2020",
+      "awarder": "",
+      "url": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent"
+      "title": "University Scholarships (three awards)",
+      "date": "2018–2021",
+      "awarder": "Harbin Institute of Technology",
+      "url": ""
+    },
+    {
+      "title": "First Prize, ABU ROBOCON",
+      "date": "2020",
+      "awarder": "",
+      "summary": "Top 16 of 75 participating universities.",
+      "url": ""
+    },
+    {
+      "title": "National Second Prize, ABU ROBOCON",
+      "date": "2019",
+      "awarder": "",
+      "url": ""
+    },
+    {
+      "title": "Excellent Student Leader",
+      "date": "2018–2019",
+      "awarder": "Harbin Institute of Technology",
+      "url": ""
     }
   ],
-  "interests": [],
-  "references": [],
-  "projects": []
+  "skills": [
+    {
+      "name": "Programming & Software",
+      "keywords": [
+        "C++",
+        "Python",
+        "MATLAB",
+        "ROS",
+        "OpenCV",
+        "STM32",
+        "Arduino"
+      ]
+    },
+    {
+      "name": "Robotics",
+      "keywords": [
+        "Motion planning",
+        "SLAM",
+        "Real-time navigation",
+        "Grasping algorithms"
+      ]
+    },
+    {
+      "name": "Machine Learning & AI",
+      "keywords": [
+        "Reinforcement learning",
+        "Probabilistic AI",
+        "Computer vision",
+        "Action recognition",
+        "Adversarial learning"
+      ]
+    },
+    {
+      "name": "Simulation & Rendering",
+      "keywords": [
+        "Blender",
+        "Isaac Gym",
+        "RaiSim",
+        "Webots",
+        "CoppeliaSim",
+        "SolidWorks"
+      ]
+    }
+  ],
+  "meta": {
+    "lastModified": "2026-10-27"
+  }
 }
