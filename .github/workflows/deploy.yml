@@ -43,7 +43,21 @@ jobs:
         sudo apt-get update
         sudo apt-get install --no-install-recommends -y imagemagick
     - name: Build
-      run: bundle exec jekyll build --trace
+      shell: bash
+      run: |
+        set -o pipefail
+        build_log="${RUNNER_TEMP}/jekyll-build.log"
+        if bundle exec jekyll build --trace 2>&1 | tee "$build_log"; then
+          exit 0
+        fi
+        # Surface build failures in public check annotations as well as job logs.
+        while IFS= read -r line || [ -n "$line" ]; do
+          line="${line//%/%25}"
+          line="${line//$'\r'/%0D}"
+          line="${line//$'\n'/%0A}"
+          printf '::error title=Jekyll build::%s\n' "$line"
+        done < <(tail -n 40 "$build_log")
+        exit 1
     - name: Deploy
       if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
       uses: JamesIves/github-pages-deploy-action@v4
