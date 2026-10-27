@@ -213,6 +213,7 @@ exclude:
   - _posts
   - _news
   - blog
+  - assets/jupyter
   - news.html
   - _pages/dropdown.md
   - reports
