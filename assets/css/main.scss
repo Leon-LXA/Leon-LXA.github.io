@@ -25,3 +25,8 @@ $max-content-width: {{ site.max_width }};
 .home-actions .btn {
   margin: 0;
 }
+
+.projects .card-title {
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
