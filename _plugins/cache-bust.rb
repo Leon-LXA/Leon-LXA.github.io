@@ -43,7 +43,10 @@ module Jekyll
         end
 
         def bust_css_cache(file_name)
-            CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+            # Include the actual Sass sources and configuration used by main.scss.
+            sources = Dir.glob('_sass/**/*.scss').sort + ['assets/css/main.scss', '_config.yml']
+            digest = Digest::MD5.hexdigest(sources.map { |path| File.read(path) }.join)
+            [file_name, '?', digest].join
         end
     end
 end
