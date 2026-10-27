@@ -50,8 +50,10 @@ jobs:
         if bundle exec jekyll build --trace 2>&1 | tee "$build_log"; then
           exit 0
         fi
-        # One annotation preserves the exception and trace within Actions' limit.
-        details="$(tail -n 150 "$build_log")"
+        # Keep the exception visible within GitHub's annotation size limit.
+        # Image-generation progress and repeated backtrace frames hide the cause.
+        details="$(sed -E '/Imagemagick:/d; /^[[:space:]]*from /d' "$build_log" | tail -n 30)"
+        details="${details:0:3500}"
         details="${details//%/%25}"
         details="${details//$'\r'/%0D}"
         details="${details//$'\n'/%0A}"
