@@ -50,13 +50,12 @@ jobs:
         if bundle exec jekyll build --trace 2>&1 | tee "$build_log"; then
           exit 0
         fi
-        # Surface build failures in public check annotations as well as job logs.
-        while IFS= read -r line || [ -n "$line" ]; do
-          line="${line//%/%25}"
-          line="${line//$'\r'/%0D}"
-          line="${line//$'\n'/%0A}"
-          printf '::error title=Jekyll build::%s\n' "$line"
-        done < <(tail -n 40 "$build_log")
+        # One annotation preserves the exception and trace within Actions' limit.
+        details="$(tail -n 150 "$build_log")"
+        details="${details//%/%25}"
+        details="${details//$'\r'/%0D}"
+        details="${details//$'\n'/%0A}"
+        printf '::error title=Jekyll build::%s\n' "$details"
         exit 1
     - name: Deploy
       if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
